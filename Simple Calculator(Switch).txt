@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main() {
+    int n , m;
+    scanf("%d",&n,&m);
+    printf("enter option:");
+    printf("1.Add\n");
+    printf("2.Sub\n");
+    printf("3.Mul\n");
+    printf("4.Div");
+    int k;
+    scanf("%d",&k);
+    switch(k){
+        case 1:
+           int l = n+m;
+           printf("%d value for addition",1);
+           break;  
+        case 2:
+           int l = n-m;
+           printf("%d value for subtraction");
+           break;
+        case 3:
+           int l = n*m;
+           printf("%d value for multiplication");
+           break;
+        case 4:
+           int l = n/m;
+           printf("%d value for division");
+           break;
+
+        default:
+           printf("invalid number");
+    }
+    return 0;
+}
