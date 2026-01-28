@@ -1,0 +1,41 @@
+#include<stdio.h>
+
+int main() {
+    int connection, units;
+    
+
+    printf("Enter the Connection type(1/2): ");
+    scanf("%d", &connection);
+    printf("Enter units consumed (1-1000): ");
+    scanf("%d", &units);
+
+    switch(connection) {
+        case 1:
+            if(units <= 100) {
+                units = units * 3;
+                printf("Bill: %d\n", units);
+            } else if(units <= 200) {
+                units = (100 * 3) + (units - 100) * 5;
+                printf("Bill: %d\n", units-80);
+            } else {
+                units = (100 * 3) + (100 * 5) + (units - 200) * 7;
+                printf("Bill: %d\n", units);
+            }
+            break;
+        case 2:
+            if(units <= 100) {
+                units = units * 7;
+                printf("Bill: %d\n", units);
+            } else {
+                units = (100 * 7) + (units - 100) * 10;
+                printf("Bill: %.d\n", units);
+            }
+            break; 
+        default:
+            printf("Invalid input\n");
+    }
+    return 0;
+}
+
+        
+    
