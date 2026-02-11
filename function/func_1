@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int simple(int P, int R, int T){
+    float result = (P*R*T)/100;
+    printf("%.2f",result);
+    return 0;
+}
+int main(){
+    int P,R,T;
+    scanf("%d\n%d\n%d",&P,&R,&T);
+    simple(P,R,T);
+    return 0;
+}
